@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
@@ -140,8 +144,44 @@
           </div>
         </div>
       </section>
-      <section class="carousel | padding-block-700">
+      <section class="carousel | padding-block-700 text-center">
         <h2 class="fs-secondary-heading fw-bold">What They've said</h2>
+        <ul class="slider">
+          <li>
+            <img src="images/avatar-anisha.png" alt="Anisha Li" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h2 class="fw-bold">Anisha Li</h2>
+              <p data-width="wide">
+                "Manage has supercharged our team's workflow. The app maintains
+                visibilty on larger milestones at all times and keeps everyone
+                motivated "
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-ali.png" alt="Ali Bravo" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h2 class="fw-bold">Ali Bravo</h2>
+              <p data-width="wide">
+                "We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is so much more focussed."
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <img src="images/avatar-richard.png" alt="Richard Watts" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h2 class="fw-bold">Richard Watts</h2>
+              <p data-width="wide">
+                "Mange allows us to prvide structure and process. It keeps us
+                organised and focused. I can't stop recommending them to evryone
+                I talk to."
+              </p>
+            </div>
+          </li>
+        </ul>
         <button class="button">Get Started</button>
       </section>
       <section class="cta | padding-block-900 bg-accent-400 text-neutral-100">
@@ -247,6 +287,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
